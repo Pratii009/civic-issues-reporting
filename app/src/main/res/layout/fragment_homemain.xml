@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- SLOGAN SECTION -->
+        <TextView
+            android:id="@+id/txtSlogan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Report Today Builds a Safer City Tomorrow."
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/txtSlogan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raise Your Voice — Civic Change Starts With You!"
+            android:textSize="15sp"
+            android:textColor="#666"
+            android:layout_marginBottom="22dp" />
+
+
+        <!-- REPORT NEW ISSUE BUTTON -->
+        <LinearLayout
+            android:id="@+id/btnReportIssue"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_white"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/baseline_report_24"
+                app:tint="#D32F2F" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report New Issue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#222"
+                android:layout_marginStart="14dp"/>
+        </LinearLayout>
+
+
+        <!-- MUNICIPAL CONTACT DETAILS TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Municipal Contacts"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#222"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- MUNICIPAL CONTACT CARD -->
+        <LinearLayout
+            android:id="@+id/municipalContactCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_white"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📞 Municipal Office: 022-12345678"
+                android:textSize="15sp"
+                android:textColor="#444"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧹 Sanitation Dept: 022-98765432"
+                android:textSize="15sp"
+                android:textColor="#444"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💧 Water Supply: 022-66554433"
+                android:textSize="15sp"
+                android:textColor="#444"/>
+        </LinearLayout>
+
+
+        <!-- EMERGENCY HELPLINES TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Helplines"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#222"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- EMERGENCY HELPLINE CARD -->
+        <LinearLayout
+            android:id="@+id/emergencyHelplineCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_white"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚔 Police: 100"
+                android:textSize="15sp"
+                android:textColor="#444"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚒 Fire Brigade: 101"
+                android:textSize="15sp"
+                android:textColor="#444"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚑 Ambulance: 102"
+                android:textSize="15sp"
+                android:textColor="#444"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#aa45bb</color>
+    <color name="grey">#bbccee</color>
+    <color name="cyan">#aaddff</color>
+
+    <color name="primaryBlue">#5A67F2</color>   <!-- Main buttons, highlights -->
+    <color name="primaryVariant">#3B4CCA</color> <!-- Darker shade of primary -->
+    <color name="secondary">#34A853</color>     <!-- Success (green) -->
+
+    <!-- Background & Surface -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F7F7F7</color>       <!-- Card backgrounds -->
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#212121</color>   <!-- Main text -->
+    <color name="textSecondary">#757575</color> <!-- Subtle/secondary text -->
+
+    <!-- Error -->
+    <color name="error">#D32F2F</color>
+
+    <color name="colorPrimary">#ddeeff</color>
+
+    <color name="backgroundLight">#FFFFFF</color>   <!-- Pure white -->
+    <color name="textColorLight">#000000</color>    <!-- Black text -->
+    <color name="buttonColorLight">#0A66C2</color>  <!-- OK -->
+
+</resources>
+
+

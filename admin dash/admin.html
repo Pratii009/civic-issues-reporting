@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic Issues Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <div style="text-align: right; margin-bottom: 10px;">
+        <button id="theme-toggle">Switch to Dark Theme</button>
+    </div>
+    
+    <div id="login-container" class="form-container">
+        <h2>Admin Login</h2>
+        <form id="login-form" onsubmit="return false;">
+            <label for="admin-email">Email</label>
+            <input type="email" id="admin-email" placeholder="Email" required>
+            <label for="admin-password">Password</label>
+            <input type="password" id="admin-password" placeholder="Password" required>
+            <button type="submit" id="login-btn">Login</button>
+        </form>
+        <div id="login-error" class="error-message"></div>
+    </div>
+    <div id="dashboard" style="display: none;">
+        <div class="dashboard-header">
+            <h1>Civic Issues Admin Dashboard</h1>
+            <button id="logout-btn" class="logout-btn">Logout</button>
+        </div>
+        <div class="dashboard-cards">
+            <div class="stat-card stat-total">
+                <div class="stat-label">Total Issues</div>
+                <div class="stat-value" id="total-issues">0</div>
+            </div>
+            <div class="stat-card stat-resolved">
+                <div class="stat-label">Resolved Issues</div>
+                <div class="stat-value" id="resolved-issues">0</div>
+            </div>
+            <div class="stat-card stat-pending">
+                <div class="stat-label">Pending Issues</div>
+                <div class="stat-value" id="pending-issues">0</div>
+            </div>
+        </div>
+        <div class="reports-section">
+            <h2>All Reports</h2>
+            <div class="table-wrapper">
+                <table id="reports-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Description</th>
+                            <th>Location</th>
+                            <th>Timestamp</th>
+                            <th>Status</th>
+                            <th>Assigned Worker</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reports-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
